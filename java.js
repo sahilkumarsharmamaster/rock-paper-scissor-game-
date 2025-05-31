@@ -18,11 +18,11 @@ const showWinner = (userwin, userchoice, Compchoice ) => {
  if(userwin) {
     userscore++; 
     userscorepara.innerText = userscore;
-    result.innerText = `You WIN! ${userchoice} beats ${Compchoice} `
+    result.innerText = `You WIN! ${Compchoice} beats ${userchoice} `
     result.style.background = "green"
  } else{ comscore++;
     compscorepara.innerText = comscore ;
- result.innerText = `You Lose! ${Compchoice} beats ${userchoice} `;
+ result.innerText = `You Lose! ${userchoice} beats ${Compchoice}`;
  result.style.background = "red"
 }
   

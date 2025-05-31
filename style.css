@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
 }
-header{
+header{ 
+    width: 100%;
    background-color: black; 
    color: azure;
    height: 4rem;
@@ -16,6 +17,16 @@ header{
   font-weight: 600;
   font-style: normal;
 }
+@media (max-width:700px) { 
+     .imgsection{
+        flex-wrap: wrap;
+        gap: 50px;
+
+     }
+     .response{
+         font-size: large;
+     }
+}
 img:hover{
   opacity: 0.5; 
 }
@@ -23,7 +34,7 @@ img{
     border: 6px solid black;
     border-radius: 50%;
     object-fit: cover;
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     box-shadow: 0 0 4px 5px solid black;
     cursor: pointer;
